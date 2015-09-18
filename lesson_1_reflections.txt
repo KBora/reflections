@@ -20,7 +20,7 @@ How can you use the commands git log and git diff to view the history of files?
     How to install a git repository?
     git clone <respository> name
 
-    Repository will be installed irectory you are in...
+    Repository will be installed directory you are in...
 
     How to view a git log?
     Go to directory
