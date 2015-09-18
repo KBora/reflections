@@ -1,0 +1,45 @@
+1
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+It pinpointed the line number and displayed the differences sequentially
+
+2
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+One can look at past mistakes, past ways of thinking and compare with the current version so you can see what has improved (or not!).  One doesn't have to worry about manually saving versions or commenting out old code.
+
+3
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+Pros of manually saving is you can save at logical points in the coding process. Cons is that you have to be disciplined to do it. Pros of auto-saving is that is always saves for you without your input. Cons is that it won't necssarily when is the best time to save (eg could save at a point when the code does not compile)
+
+4
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Coding usually requires multiple files that are related - ie. a repository. Google docs is usually for documents with no dependecies on other documents.
+
+5
+How can you use the commands git log and git diff to view the history of files?
+
+    How to install a git repository?
+    git clone <respository> name
+
+    Repository will be installed irectory you are in...
+
+    How to view a git log?
+    Go to directory
+    git log
+
+    How do I compare two commits?
+    git diff f19cb1b80fe27e938e4d72770ca0a42f25e99ecc b0678b161fcf74467ed3a63110557e3d6229cfa6
+    TIP: THe older one should come first
+
+    How do I colour code git changes?
+    git config --global color.ui auto
+
+6
+How might using version control make you more confident to make changes that could break something?
+You know you can easily go back and easily compare changes to locate the bug
+
+7 
+Now that you have your workspace set up, what do you want to try using Git for?
+Working on the next Udacity project
+
+8 What happens when a file is renamed?
+I think the file is still compared to the old name of itself...

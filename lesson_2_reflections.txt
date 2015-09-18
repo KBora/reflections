@@ -1,0 +1,14 @@
+9 
+How do I make an existing directory a git repository?
+    git init
+
+10 
+How do I check the if a directory is a git repository?
+    git status  - also indicates files modified
+
+
+11
+What happens when you initialize a repository? Why do you need to do it?
+    .git folder is created.  Needed so that git can track changes
+
+12
