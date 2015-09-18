@@ -12,3 +12,23 @@ What happens when you initialize a repository? Why do you need to do it?
     .git folder is created.  Needed so that git can track changes
 
 12
+What happens when you run 'git status' ?
+    Shows you what has been added to the staging area
+    A commit will include what ever is in the staging area
+
+    On an new project, it shows the untracked files    
+
+13
+How do I add files to the staging area?
+    git add <filename>
+
+14
+How do I remove a file from the staging area?
+    git reset <filename>
+
+
+15
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+    staging is temp area where commit files are stored. working direcotry is local copy of your the repository. repository is where all files and history site. staging offers a way to bundle changes together so they can committed in bulk rather than one at a time
+
+    
