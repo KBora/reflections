@@ -22,6 +22,11 @@ What happens when you run 'git status' ?
 How do I add files to the staging area?
     git add <filename>
 
+13a 
+When do/can you add a file to git? before working on it? or during?
+Both
+
+
 14
 How do I remove a file from the staging area?
     git reset <filename>
@@ -31,4 +36,54 @@ How do I remove a file from the staging area?
 How is the staging area different from the working directory and the repository? What value do you think it offers?
     staging is temp area where commit files are stored. working direcotry is local copy of your the repository. repository is where all files and history site. staging offers a way to bundle changes together so they can committed in bulk rather than one at a time
 
-    
+16
+How do I commit a change?
+    First add files by going 'git add <filename>''
+    Then once logical commit step is reached, type:  git commit  and then enter a message
+    Check status 'git status'
+
+17
+How can you use the staging area to make sure you have one commit per logical change?
+    Add files for that logical change into the staging area, then commit
+
+18
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+    Branches for each new piece of context eg dev work, Experimental features, new functionality
+    Can have 2 separate code streams so features can be developed in parallel
+
+19
+How do the diagrams help you visualize the branch structure?
+    Branches can be non linear, so diagrams help picture this structure
+
+20
+How do you checkout and create a branch at the same time?
+    git checkout -b new_branch_name
+
+equivalent of doing:    git branch new_branch_name
+                        git checkout
+
+
+21 
+How to merge branches?
+    git merge master branch1
+To make things simpler, checkout to the master branch first. Can also merge multiple branches
+
+21
+How do I see the diff between a commit and it's parent?
+    git show <commit id>
+    This is useful if seeing interleave commits which happens when you merge branches
+
+22
+How do I see a 'visual' log of changes / branches?
+    git log --graph --oneline
+
+
+23 
+What happens when conflicts occur during a merge?
+    git writes some funny lines to mark where to conflicts occur eg '<<<<< HEAD' marks where the current head of the branch is; '|||||| merged common ancestors' is the original version and '>>>>> master' marks end of conflict difference
+
+
+24
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+    pros: wont commit things it cannot
+    cons: you have to manually do it
