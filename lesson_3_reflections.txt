@@ -1,2 +1,10 @@
 1 When would you want to use a remote repository rather than keeping all your work local?
   Collaboration with others, when you work on multiple machines, when you want a non-local copy of files
+  
+2 How do I push changes from local to GitHub repository?
+  In the master branch (not sure if this is compulsory), git remote add origin <repository_url>
+    'origin' is standard naming convention
+  git push origin master
+    This pushes the repository files to github. Will prompt for username and pwd if using https
+
+  
