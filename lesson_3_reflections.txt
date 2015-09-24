@@ -7,4 +7,9 @@
   git push origin master
     This pushes the repository files to github. Will prompt for username and pwd if using https
 
+3 What is a remote?
+  Reference to another repository. When you clone a respository, a remote gets setup for your automatically
+  
+4 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+	Because you may be making changes locally and you dont want git to override the changes with an automatic pull
   
