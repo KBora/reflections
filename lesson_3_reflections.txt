@@ -24,4 +24,14 @@
     clone when you want to create a new copy of a repository
     use branch when you need to make a moderate change to your code
 
-    
+7 Merging Remote Changes
+  Git keeps 'origin/master' ie. copy of the github master branch when you pull a change. This is updated when you run 'git fetch origin'. (ie. this fetches commits done by collaborators but does not update your local master)
+  To merge these changes, run 'git merge master origin/master'
+  The equivalent of these two commands is 'git pull origin master'. this does both a fetch and merge for you.
+
+8 What is the benefit of having a copy of the last known state of the remote stored locally?
+  It enables git to merge collaborator's changes when you run a pull (or fetch/merge) from the remote repository
+
+9 What is a process workflow for getting feedback on changes?
+  Create a branch locally, push branch to GitHub (but dont merge with master yet). push command example: push origin <branch_name>
+  
