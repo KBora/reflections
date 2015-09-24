@@ -15,3 +15,13 @@
 
 5 What is a fork?
 	A fork is a copy of another repository on github - very similar to clone - except it only applies to github.  Doesn't require local download of the github repository .. the forked copy stays on github.
+
+6 Describe the differences between forks, clones, and branches. When would you use one instead of another?
+    fork is a clone of another repository on github
+    clone is a copy of another repository (locally or hosted somewhere)
+    branches are labels for a sequence of commits
+    use fork when you want to work on someone's github project
+    clone when you want to create a new copy of a repository
+    use branch when you need to make a moderate change to your code
+
+    
