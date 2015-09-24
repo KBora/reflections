@@ -12,4 +12,6 @@
   
 4 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 	Because you may be making changes locally and you dont want git to override the changes with an automatic pull
-  
+
+5 What is a fork?
+	A fork is a copy of another repository on github - very similar to clone - except it only applies to github.  Doesn't require local download of the github repository .. the forked copy stays on github.
