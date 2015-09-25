@@ -42,3 +42,20 @@
 
 10 What is a process workflow for getting feedback on changes?
   Create a branch locally, push branch to GitHub (but dont merge with master yet). push command example: push origin <branch_name>
+
+11 Steps for 'Updating a Pull Request Quiz'
+  a Create a different-oil branch
+    git branch different-oil
+    git checkout different-oil 
+  b Make a commit different-oil changing the oil
+    subl <file_name>
+    git add <file_name>
+    git commit <file_name>
+  c Push different-oil to your fork
+    git push origin different-oil
+  d Create a pull request form different-oil into master
+    In  GitHub click on pull request
+
+12 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+  Email trails, SMS, custom systems, other online tools eg basecamp
+  Git/Github seems perfect for code. Git/Github may not be possible with non-tech savvy collaborators or in coding environments where code is not just text files...
