@@ -62,3 +62,6 @@
   
 13 Q. If I run git fetch and it picks up some changes.. how do I examine those changes?
 ???
+
+14 When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+  It would seem neater to compartmentalise all non trivial changes into separate branches.. so that you can isolate the code for a specific feature in a branch. It allow people to provide feedback on the branch, so it could be good in a team. Has more overhead than working directly on the master. 
