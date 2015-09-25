@@ -60,7 +60,7 @@ How do you checkout and create a branch at the same time?
     git checkout -b new_branch_name
 
 equivalent of doing:    git branch new_branch_name
-                        git checkout
+                        git checkout new_branch_name
 
 
 21 
