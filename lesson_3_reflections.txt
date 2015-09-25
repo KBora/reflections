@@ -23,5 +23,17 @@
     use fork when you want to work on someone's github project
     clone when you want to create a new copy of a repository
     use branch when you need to make a moderate change to your code
-
     
+7 Desribe the pull request process?
+	push a branch to github
+	create pull request
+	collaborators can see that there is a pull request (email notification on pull request)
+	'pull request' means 'can i merge/push my change into master?' aka 'please merge/pull my request into the master branch'
+	collaborator can review changes by making a comment (inline comment)
+	if change is OK, collaborator can click on 'merge pull request' button  (only avaialble if no conflicts available)
+
+to do:
+	to do https://www.udacity.com/course/viewer#!/c-ud775-nd/l-3105028581/e-3366508553/m-3353378636
+	create a new branch 'different-oil'
+	push this to git hub
+	create a pull request
