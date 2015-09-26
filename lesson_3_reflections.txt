@@ -66,3 +66,19 @@
 
 14 When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
   It would seem neater to compartmentalise all non trivial changes into separate branches.. so that you can isolate the code for a specific feature in a branch. It allow people to provide feedback on the branch, so it could be good in a team. Has more overhead than working directly on the master. 
+
+15 Steps for Updating a Cross-Repository Pull Request (eg when your pull request cannot be merged because of conflicts)
+	a Add original repository as a remote to your clone - copy URL of repository (eg choose your own adventure master)
+	b run 'git remote add upstream <url_of_original_repository>' - upstream is a naming convention
+	c 'git checkout master'
+	d 'git pull upstream master'  - bring your local repos. up to date with original repository master
+	e 'git checkout <your_conflicting_branch>' ** important
+	f 'git merge master <your_conflicting_branch>' - merge your branch with master
+	g this has conflicts, so you have to resolve manually by editing the file(s)
+	h 'git add <files_modified_by_your_conflicting_branch>'
+	i 'git commit' - now the branch is merged with the master (see step f)
+	j 'git push origin <your_conflicting_branch>' this pushes to your own repos on GitHub not upstream which you prob dont permission to
+	k 'git checkout master' - make sure it also up to date
+	l 'git push ....' - now the pull request is good to be merged
+??? Did not try this myself. Not sure if I could.
+	
