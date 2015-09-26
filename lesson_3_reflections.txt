@@ -2,9 +2,10 @@
   Collaboration with others, when you work on multiple machines, when you want a non-local copy of files
   
 2 How do I push changes from local to GitHub repository?
-  In the master branch (not sure if this is compulsory), git remote add origin <repository_url>
+  First setup link to GitHub: In the master branch (not sure if this is compulsory), git remote add origin <repository_url>
     'origin' is standard naming convention
-  git push origin master
+  Then:
+  git push origin master  or git push origin <branch_name>
     This pushes the repository files to github. Will prompt for username and pwd if using https
 
 3 What is a remote?
@@ -22,7 +23,7 @@
     branches are labels for a sequence of commits
     use fork when you want to work on someone's github project
     clone when you want to create a new copy of a repository
-    use branch when you need to make a moderate change to your code
+    use branch when you need to make a change to your code. not sure when to make a branch vs making a commit. branch can consist of several commits.
     
 7 Desribe the pull request process?
 	push a branch to github
